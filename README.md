@@ -4,7 +4,7 @@ Travail sur les bases de données
 ## Ticket mystère au supermarché
 
 Projet de Davy et Cindy : le joueur estime le montant d'une transaction à partir
-d'indices, avec la quantité cachée, puis compare sa réponse à celle d'un modèle.
+d'indices, avec la quantité cachée, puis tente de retrouver la prédiction du modèle en trois essais.
 Le code de l'application n'est pas encore implémenté.
 
 ## Structure
@@ -47,3 +47,14 @@ modules correspondants seront disponibles. Les tests et la CI restent à créer.
 - Limites du modèle et avertissement pédagogique.
 
 Le CSV local est ignoré par Git en attendant la confirmation de sa licence.
+
+## Règles mises à jour : trois essais
+
+La cible reste le total de la transaction (hypothèse du guide), pas le prix unitaire.
+Le modèle calcule une seule estimation cachée par manche. Le joueur dispose de
+trois propositions valides, avec un indice « plus élevé » ou « plus bas » après
+chaque erreur. Une saisie invalide ne consomme pas de chance. La cible est révélée
+à la victoire ou après la troisième erreur. Tolérance proposée : ±5 %, distincte
+de l'incertitude du modèle. L'historique et le graphique masquent la cible active.
+Le montant réel du CSV sert à évaluer le modèle, pas à déterminer la victoire.
+Voir le guide mis à jour pour les détails et la répartition Davy/Cindy.
