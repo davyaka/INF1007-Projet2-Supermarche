@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# CSV local : licence de redistribution à confirmer avant publication.
+/supermarket_sales - Sheet1.csv
+/donnees/supermarket_sales.csv
+
+# Historique local des parties.
+/historique.csv
+/historique.json
