@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Fichiers locaux du projet INF1007
+.DS_Store
+historique_parties.csv
+historique_test.csv
+test_historique_manuel.py
