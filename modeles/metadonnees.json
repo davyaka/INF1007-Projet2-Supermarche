@@ -1,0 +1,111 @@
+{
+  "version_schema": 1,
+  "cible": "total",
+  "unite": "unités monétaires",
+  "colonnes": [
+    "prix_unitaire",
+    "categorie",
+    "type_client",
+    "succursale",
+    "paiement",
+    "heure",
+    "jour_semaine"
+  ],
+  "variables": [
+    {
+      "nom": "prix_unitaire",
+      "libelle": "Prix unitaire",
+      "type": "numerique",
+      "minimum": 10.08,
+      "maximum": 99.96
+    },
+    {
+      "nom": "categorie",
+      "libelle": "Categorie",
+      "type": "categorielle",
+      "categories": [
+        "Electronic accessories",
+        "Fashion accessories",
+        "Food and beverages",
+        "Health and beauty",
+        "Home and lifestyle",
+        "Sports and travel"
+      ]
+    },
+    {
+      "nom": "type_client",
+      "libelle": "Type client",
+      "type": "categorielle",
+      "categories": [
+        "Member",
+        "Normal"
+      ]
+    },
+    {
+      "nom": "succursale",
+      "libelle": "Succursale",
+      "type": "categorielle",
+      "categories": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "nom": "paiement",
+      "libelle": "Paiement",
+      "type": "categorielle",
+      "categories": [
+        "Cash",
+        "Credit card",
+        "Ewallet"
+      ]
+    },
+    {
+      "nom": "heure",
+      "libelle": "Heure",
+      "type": "entier",
+      "minimum": 10.0,
+      "maximum": 20.0
+    },
+    {
+      "nom": "jour_semaine",
+      "libelle": "Jour semaine",
+      "type": "categorielle",
+      "categories": [
+        "dimanche",
+        "jeudi",
+        "lundi",
+        "mardi",
+        "mercredi",
+        "samedi",
+        "vendredi"
+      ]
+    }
+  ],
+  "modele": "LinearRegression",
+  "graine": 42,
+  "fraction_test": 0.2,
+  "metrique": "RMSE",
+  "resultats": {
+    "lignes_entrainement": 800,
+    "lignes_test": 200,
+    "rmse_modele": 188.3489456812794,
+    "rmse_sklearn": 188.3489456812794,
+    "rmse_reference": 255.74643971340345,
+    "moyenne_entrainement": 319.2399,
+    "predictions_test_non_positives": 0
+  },
+  "versions": {
+    "python": "3.14.0",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.3.3",
+    "pandas": "3.1.1",
+    "joblib": "1.6.0"
+  },
+  "jeu": {
+    "essais_maximum": 3,
+    "tolerance_relative_proposee": 0.05,
+    "cible_du_jeu": "prédiction du modèle arrondie au centime"
+  }
+}
