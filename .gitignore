@@ -222,6 +222,7 @@ __marimo__/
 # CSV local : licence de redistribution à confirmer avant publication.
 /supermarket_sales - Sheet1.csv
 /donnees/supermarket_sales.csv
+/modeles/manches_test.csv
 
 # Historique local des parties.
 /historique.csv
